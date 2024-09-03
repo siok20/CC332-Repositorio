@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 
-app.length('/', (req,res) => {
+app.get('/', (req,res) => {
     res.send('Hello, World!');
 });
 
-const port = process.env.PORT||300;
+const port = process.env.PORT||3000;
 app.listen(port, ()=>{
-    console.log('Server running on port ${port}');
+    console.log(`Server running on port ${port}`);
 });
 
-MediaSourceHandle.exports=app;
+module.exports=app;
